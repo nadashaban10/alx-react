@@ -1,38 +1,76 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+.App-header img {
+  width: 200px;
+}
+.App-header h1 {
+  font-size: 2.5em;
+  color: #df4f4f;
+  margin-left: 55px;
+  margin-top: 80px;
+}
+.App-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px; /* Height of the line */
+  background-color: #df4f4f; /* Color of the line */
+  bottom: 0; /* Position the line at the bottom of the header */
+  width: 98%;
+  margin: 0 auto; /* Center the line */
+}
+.App-body p {
+  font-weight: 500;
+  font-size: 20px;
+  margin:20px;
+}
+.App .App-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px; /* Height of the line */
+  background-color: #df4f4f; /* Color of the line */
+  bottom: 0; /* Position the line at the bottom of the header */
+  width: 98%;
+  margin: 0 auto; /* Center the line */
+}
+.App-footer p {
+  text-align: center;
+  margin-top: 300px;
+  font-style: italic;
+  font-weight: 500;
+
+}
+.forms {
+  display: flex;
+  padding-left: 30px;
+
+}
+.forms button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #dd4b4bd0;
   color: white;
+  border: none;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+}
+li[data-priority="default"] {
+  color: blue;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li[data-priority="urgent"] {
+  color: red;
 }
