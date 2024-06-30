@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nadashaban10/alx-react/tree/main/0x01-react_intro/task_1/dashboard/static/css/main.f9d4722b.css",
+    "main.js": "/nadashaban10/alx-react/tree/main/0x01-react_intro/task_1/dashboard/static/js/main.f208d5a8.js",
+    "static/media/jpg": "/nadashaban10/alx-react/tree/main/0x01-react_intro/task_1/dashboard/static/media/175b85183ecedb529e14.24bab5d633e36ca8d17e.jpg",
+    "static/media/close1437.jpg": "/nadashaban10/alx-react/tree/main/0x01-react_intro/task_1/dashboard/static/media/close1437.5c7814604ec49c02d74e.jpg",
+    "index.html": "/nadashaban10/alx-react/tree/main/0x01-react_intro/task_1/dashboard/index.html",
+    "main.f9d4722b.css.map": "/nadashaban10/alx-react/tree/main/0x01-react_intro/task_1/dashboard/static/css/main.f9d4722b.css.map",
+    "main.f208d5a8.js.map": "/nadashaban10/alx-react/tree/main/0x01-react_intro/task_1/dashboard/static/js/main.f208d5a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9d4722b.css",
+    "static/js/main.f208d5a8.js"
+  ]
+}
