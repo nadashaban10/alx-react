@@ -1,0 +1,54 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-header {
+  display: flex;
+  position: relative;
+}
+.App-header img {
+  width: 200px;
+}
+.App-header h1 {
+  font-size: 2.5em;
+  color: #df4f4f;
+  margin-left: 55px;
+  margin-top: 80px;
+}
+.App-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px; /* Height of the line */
+  background-color: #df4f4f; /* Color of the line */
+  bottom: 0; /* Position the line at the bottom of the header */
+  width: 98%;
+  margin: 0 auto; /* Center the line */
+}
+.App-body p {
+  font-weight: 500;
+  font-size: 20px;
+  margin:50px;
+}
+.App .App-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px; /* Height of the line */
+  background-color: #df4f4f; /* Color of the line */
+  bottom: 0; /* Position the line at the bottom of the header */
+  width: 98%;
+  margin: 0 auto; /* Center the line */
+}
+.App-footer p {
+  text-align: center;
+  margin-top: 300px;
+  font-style: italic;
+  font-weight: 500;
+
+}
