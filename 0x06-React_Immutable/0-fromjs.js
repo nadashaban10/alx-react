@@ -1,6 +1,15 @@
-// import { fromJS } from 'immutable';
-import { fromJS } from './node_modules/immutable/dist/immutable';
+import { fromJS } from 'immutable';
 
-const getImmutableObject = (object) => fromJS(object);
+export default function getImmutableObject(object) {
+    return fromJS(object);
+}
 
-export default getImmutableObject;
+const myObject = {
+    fear: true,
+    smell: -1033575916.9145899,
+    wall: false,
+    thing: -914767132,
+};
+
+const immObject = getImmutableObject(myObject);
+console.log(immObject);

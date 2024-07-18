@@ -1,5 +1,14 @@
-import { getIn, fromJS } from 'immutable';
+import { fromJS } from 'immutable';
 
 export default function accessImmutableObject(object, array) {
-	return getIn(fromJS(object), array);
+    const FormObject = fromJS(object);
+    return FormObject.getIn(array, undefined);
+        
 }
+const objectTest = accessImmutableObject({
+    name: {
+         first: "Guillaume",
+         last: "Salva"
+    }
+}, ['name', 'first'])
+console.log(objectTest);
